@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #f4f6f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        .container {
+          background: #fff;
+          padding: 30px 40px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          width: 380px;
+        }
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #333;
+        }
+        label {
+          display: block;
+          margin: 8px 0 5px;
+          font-weight: bold;
+          color: #555;
+        }
+        input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          margin-bottom: 15px;
+          font-size: 15px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          background: #007bff;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        button:hover {
+          background: #0056b3;
+        }
+        .register-link {
+          text-align: center;
+          margin-top: 10px;
+        }
+        .register-link a {
+          color: #007bff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Employee Login</h2>
+    <form action="loginServlet" method="post">
+        <label for="eid">Employee ID</label>
+        <input type="text" id="eid" name="eid" placeholder="Enter your ID" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="register-link">
+        Don’t have an account? <a href="EmployeeRegister.html">Register here</a>
+    </div>
+</div>
+</body>
+</html>
